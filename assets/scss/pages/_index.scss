@@ -1,8 +1,119 @@
-.hint{
-  width: 580px;
+.header {
+  .hint {
+    width: 580px;
+  }
+  .bg-ball {
+    width: 800px;
+    margin: 0 auto;
+    height: 800px;
+    border-radius: 1000px;
+    background-position: top;
+  }
+
+  .img-wall {
+    top: 400px;
+  }
 }
-.bg-ball{
-  width: 800px;
-  margin: 0 auto;
-  // height: 800px;
+.wraper {
+  margin-left: 300px;
+  .logo {
+    width: 96px;
+  }
+  .swiper {
+    .mb-32 {
+      margin-bottom: 32px;
+    }
+    .d-inline-block {
+      display: inline-block;
+    }
+    .fw-900 {
+      font-weight: 900;
+    }
+    .fw-600 {
+      font-weight: 600;
+    }
+    .gray-600 {
+      color: #6c757d;
+    }
+    &-content{
+      height: 206px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .swiper {
+      overflow: visible;
+      overflow-x: clip;
+    }
+    .swiper a {
+      font-size: 20px;
+      line-height: 2;
+      color: #569573;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+    .swiper-pagination {
+      width: 232px;
+      position: relative;
+    }
+    .swiper-pagination::after {
+      content: "";
+      width: 80px;
+      height: 1px;
+      background-color: #6c757d;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .swiper-prev:hover {
+      background-color: #6c757d;
+    }
+    .swiper-button-disabled {
+      color: #dee2e6;
+      border-color: #dee2e6 !important;
+    }
+    .swiper-button-disabled:hover {
+      cursor: default;
+      background-color: initial !important;
+    }
+    .swiper-next:hover {
+      background-color: #6c757d;
+      color: #dee2e6;
+    }
+    .only-staff {
+      background: #e8e3da;
+    }
+    /* 折角樣式 */
+    .horn {
+      position: relative;
+    }
+    .horn:after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 40px 40px;
+      border-color: transparent transparent white transparent;
+      position: absolute;
+      top: 460px;
+      right: 0;
+    }
+
+    @media (max-width: 768px) {
+      .swiper-slide img {
+        height: 400px;
+      }
+    }
+  }
+}
+.work-way{
+  padding-top: 280px;
+  padding-bottom: 80px;
 }

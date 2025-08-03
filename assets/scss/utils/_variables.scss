@@ -554,7 +554,7 @@ $border-color-translucent:    rgba($black, .175) !default;
 $border-radius:               .375rem !default;
 $border-radius-sm:            .25rem !default;
 $border-radius-lg:            .5rem !default;
-$border-radius-xl:            1rem !default;
+$border-radius-xl:            1.5rem !default;
 $border-radius-xxl:           2rem !default;
 $border-radius-pill:          50rem !default;
 // scss-docs-end border-radius-variables
@@ -644,6 +644,7 @@ $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base * 1.125!default;
 $h7-font-size:                $font-size-base !default;
+$h8-font-size:                $font-size-base * .875!default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -654,7 +655,8 @@ $font-sizes: (
   4: $h4-font-size,
   5: $h5-font-size,
   6: $h6-font-size,
-  7: $h7-font-size
+  7: $h7-font-size,
+  8: $h8-font-size
 ) !default;
 // scss-docs-end font-sizes
 
