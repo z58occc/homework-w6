@@ -23,6 +23,11 @@
     .mb-32 {
       margin-bottom: 32px;
     }
+    .small-mark {
+      top: 12px;
+      left: 12px;
+      border-radius: 12px;
+    }
     .d-inline-block {
       display: inline-block;
     }
@@ -35,7 +40,7 @@
     .gray-600 {
       color: #6c757d;
     }
-    &-content{
+    &-content {
       height: 206px;
       display: flex;
       flex-direction: column;
@@ -113,7 +118,48 @@
     }
   }
 }
-.work-way{
+.work-way {
   padding-top: 280px;
   padding-bottom: 80px;
+  margin-top: -120px;
+  .img-why {
+    width: 120px;
+  }
+  .smart-guy {
+    width: 196px;
+  }
+  .horizontal-line {
+    width: calc(100% - 367px);
+    border: 1px solid black;
+    height: 1px;
+  }
+}
+.job-partner {
+  .greenball {
+    width: 800px;
+    height: 800px;
+    right: -180px;
+    top: 140px;
+    z-index: -1;
+  }
+}
+.process{
+  .serve-card{
+    padding-top: 64px;
+    padding-bottom: 48px;
+    border-radius: 24px;
+    .serve-img{
+      width: 160px;
+    }
+    .small-mark{
+      padding: 10.5px 16px;
+      border-top-left-radius: 24px;
+      border-bottom-right-radius: 24px;
+    }
+  }
+}
+.QA{
+  &-img{
+    width: 120px;
+  }
 }
