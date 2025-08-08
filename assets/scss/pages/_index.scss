@@ -176,3 +176,11 @@
     }
   }
 }
+.footer{
+  &-logo{
+    width: 40px;
+  }
+  .bi-telephone,.bi-envelope{
+    font-size: 18px;
+  }
+}

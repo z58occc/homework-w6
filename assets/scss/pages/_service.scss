@@ -1,0 +1,17 @@
+.banner{
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    background-image: url(/assets/images/service/bg.png);
+    width: 100%;
+    opacity: 0.5;
+    position: absolute;
+    /* 偏移值皆設為 0，讓僞元素跟父元素一樣大小 */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 10%;
+  }
+}

@@ -2,7 +2,9 @@
 @import './utils/variables';
 @import "../../node_modules/bootstrap";
 @import './utils/utilities';
+@import './utils/helpers';
 
 @import './layout/base';
 @import './layout/compoents';
 @import './pages/index.scss';
+@import './pages/service.scss';
