@@ -49,3 +49,18 @@ input[type="radio"]:checked {
     }
   }
 }
+.service-item {
+  padding-bottom: 380px;
+  .card {
+    width: calc((100% - 48px) / 3);
+  }
+}
+.support-plan {
+  margin-top: -300px;
+  .phone-man {
+    left: 24px;
+  }
+  .phone-girl {
+    right: 24px;
+  }
+}
