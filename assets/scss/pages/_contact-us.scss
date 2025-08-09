@@ -1,0 +1,50 @@
+.career-plan{
+  .career-item{
+    background: #E0E5EB;
+  }
+}
+.career {
+  &-identity {
+    border-bottom: 1px solid #d1d9e1;
+    .aside {
+      width: 30.61224%;
+    }
+    .dropdown-menu {
+      width: 100%;
+      .dropdown-item {
+        padding: 8px 24px;
+      }
+    }
+    .career-summary {
+      height: 160px;
+    }
+  }
+}
+
+.main {
+  padding: 80px 0;
+  width: 100%;
+  .smart-woman{
+    right: 40px;
+  }
+  .content {
+    width: 56%;
+    margin: 0 auto;
+    .title {
+      width: 27%;
+    }
+    .main-form {
+      width: calc(73% - 24px);
+      .big-avatar {
+        width: 120px;
+      }
+    }
+  }
+}
+.personal-data{
+  .personal-item{
+    background: #E0E5EB;
+  }
+}
+
+
