@@ -1,4 +1,4 @@
-.banner{
+.banner {
   position: relative;
   &::before {
     content: "";
@@ -13,5 +13,39 @@
     left: 0;
     right: 0;
     opacity: 10%;
+  }
+  .woman-deco {
+    bottom: -8px;
+    right: 440px;
+  }
+}
+a {
+  width: fit-content;
+}
+.card-label {
+  /* 加入預設隱形 border，避免 active 狀態產生區塊跳動問題 */
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"]:checked {
+  + .card-label {
+    border: 2px solid #36c99f;
+    &:before {
+      content: "HOT";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 14px;
+      font-weight: bold;
+      background-color: #36c99f;
+      border-bottom-right-radius: 12px;
+      padding: 8px 16px;
+    }
   }
 }
