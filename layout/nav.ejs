@@ -1,46 +1,53 @@
-<nav class="nav border-bottom border-primary-subtle">
+<nav class="navbar nav border-bottom border-primary-subtle">
   <div class="d-flex justify-content-between container align-items-center">
     <a href="../pages/index.html">
       <img class="logo" src="/assets/images/index/logo.png" alt="man talk">
     </a>
-    <ul class="d-flex align-items-center list-unstyled mb-0">
+    <ul class="d-md-flex  d-none align-items-center list-unstyled mb-0  ">
       <li class="nav-item me-2">
-        <a href="#">
+        <a href="../pages/service.html">
           服務方案
         </a>
       </li>
       <li class="nav-item me-2">
-        <a href="#">
+        <a href="../pages/about.html">
           關於職旅
         </a>
       </li>
       <li class="nav-item">
-        <a href="#">
+        <a href="../pages/contact-us.html">
           聯絡我們
         </a>
       </li>
     </ul>
-    <a href="#">
-      <div class="d-flex align-items-center ">
+    <div class="d-flex">
+      <div class="d-flex align-items-center me-3">
         <button type="button" class="btn border-primary-subtle rounded-4 px-5 py-2" data-bs-toggle="modal"
           data-bs-target="#log-modal" onclick="showModal('log')" id="log-init-btn">登入/註冊</button>
       </div>
-    </a>
+
+      <button class="navbar-toggler d-md-none border-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+
   </div>
 </nav>
 
 
 <!--log Modal -->
 <%- include('./layout/log-reg-modal.ejs') %>
-<script>
-  const logModal = document.getElementById('log-part');
-  const regModal = document.getElementById('reg-part');
+  <script>
+    const logModal = document.getElementById('log-part');
+    const regModal = document.getElementById('reg-part');
 
-  function showModal(type) {
-    const show = type === "log" ? logModal : regModal;
-    const hide = type === "log" ? regModal : logModal;
+    function showModal(type) {
+      const show = type === "log" ? logModal : regModal;
+      const hide = type === "log" ? regModal : logModal;
 
-    show.style.display = 'flex';
-    hide.style.display = 'none';
-  }
-</script>
+      show.style.display = 'flex';
+      hide.style.display = 'none';
+    }
+  </script>
