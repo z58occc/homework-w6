@@ -6,24 +6,24 @@
   <body>
     <%- include("./layout/nav-dashboard") %>
 
-      <main class="main bg-light">
+      <main class="main bg-secondary-subtle">
         <div class="content">
           <div class="career-plan">
             <%- include("./layout/tab") %>
           </div>
-          <div class="career bg-white p-9 shadow ">
-            <section class="career-identity d-flex mb-5">
-              <div class="aside me-4">
-                <h2 class="fs-4 lh-sm mb-2">職旅計劃概況</h2>
+          <div class="career bg-white p-9 shadow rounded-4 ">
+            <section class="career-identity d-flex mb-9">
+              <div class="aside me-6">
+                <h2 class="fs-4 lh-12 mb-3">職旅計劃概況</h2>
                 <div class="d-flex align-items-center">
-                  <span class="text-secondary me-1">欄位皆為</span>
+                  <span class="text-secondary-emphasis me-1">欄位皆為</span>
                   <span class="badge bg-danger">必填</span>
                 </div>
               </div>
               <div class="career-form">
-                <h3 class="mb-2">目前職業狀態</h3>
-                <ul class="pe-5 mb-4">
-                  <li class="form-check form-check-inline mb-2">
+                <h3 class="fs-7 mb-2">目前職業狀態</h3>
+                <ul class="ps-0 pe-5 mb-6">
+                  <li class="form-check form-check-inline mb-2 ">
                     <input class="form-check-input" type="radio" name="identity" id="identity1" value="full-time- job" checked>
                     <label class="form-check-label" for="identity1">
                       全職上班族
@@ -67,8 +67,8 @@
                   </li>
                 </ul>
 
-                <div class="dropdown mb-4">
-                  <button class="btn btn-lg btn-outline-secondary  w-100 text-start d-flex justify-content-between p-3 "
+                <div class="dropdown mb-6">
+                  <button class="btn btn-lg border-primary-subtle  w-100 text-start d-flex justify-content-between p-3 "
                     type="button" id="dropdownIndustry" data-bs-toggle="dropdown" aria-expanded="false">
                     <span>
                       工作產業
@@ -88,8 +88,8 @@
                   </ul>
                 </div>
 
-                <div class="dropdown mb-4">
-                  <button class="btn btn-lg btn-outline-secondary  w-100 text-start d-flex justify-content-between p-3 "
+                <div class="dropdown mb-6">
+                  <button class="btn btn-lg border-primary-subtle  w-100 text-start d-flex justify-content-between p-3 "
                     type="button" id="dropdownSeniority" data-bs-toggle="dropdown" aria-expanded="false">
                     <span>
                       工作年資
@@ -115,8 +115,8 @@
                   </ul>
                 </div>
 
-                <h3 class="mb-2">月收入區間</h3>
-                <ul class="mb-4">
+                <h3 class="mb-2 fs-7">月收入區間</h3>
+                <ul class="mb-6 ps-0">
                   <li class="form-check form-check-inline mb-2">
                     <input class="form-check-input" type="radio" name="identity" id="earning1" value="30000" checked>
                     <label class="form-check-label" for="earning1">
@@ -155,7 +155,7 @@
                   </li>
                 </ul>
 
-                <div class="form-floating mb-4">
+                <div class="form-floating mb-6">
                   <textarea class="form-control career-summary" placeholder="Leave a comment here"
                     id="career-summary"></textarea>
                   <label for="career-summary" class="text-dark">
@@ -163,29 +163,29 @@
                   </label>
                 </div>
 
-                <div class="form-floating mb-4">
+                <div class="form-floating mb-6">
                   <input type="text" class="form-control " id="case" placeholder="name@example.com">
                   <label class="text-dark" for="case">作品案例展示</label>
                 </div>
 
-                <h3 class="mb-2">附件檔案</h3>
-                <button type="button" class="btn btn-outline-secondary btn-lg me-4 mb-5 ">
+                <h3 class="mb-2 fs-7 ">附件檔案</h3>
+                <button type="button" class="btn border-primary-subtle btn-lg me-4 mb-9 ">
                   <i class="bi bi-upload"></i>
                   上傳檔案
                 </button>
               </div>
             </section>
 
-            <section class="career-identity d-flex mb-5">
-              <div class="aside me-4">
-                <h2 class="fs-4 lh-sm mb-2">職涯規劃</h2>
+            <section class="career-identity d-flex mb-9">
+              <div class="aside me-6">
+                <h2 class="fs-4 lh-sm mb-3">職涯規劃</h2>
                 <div class="d-flex align-items-center">
-                  <span class="text-secondary me-1">欄位皆為</span>
+                  <span class="text-secondary-emphasis me-1">欄位皆為</span>
                   <span class="badge bg-danger">必填</span>
                 </div>
               </div>
               <div class="career-form w-100">
-                <div class="form-floating mb-4">
+                <div class="form-floating mb-6">
                   <textarea class="form-control career-summary" placeholder="Leave a comment here"
                     id="one year career"></textarea>
                   <label for="one year career" class="text-dark">
@@ -193,7 +193,7 @@
                   </label>
                 </div>
 
-                <div class="form-floating mb-4">
+                <div class="form-floating mb-6">
                   <textarea class="form-control career-summary" placeholder="Leave a comment here"
                     id="three year career"></textarea>
                   <label for="three year career" class="text-dark">
@@ -201,8 +201,8 @@
                   </label>
                 </div>
 
-                <h3 class="mb-2">理想工作模式</h3>
-                <ul class="pe-5 mb-4">
+                <h3 class="mb-2 fs-7">理想工作模式</h3>
+                <ul class="pe-5 mb-6 ps-0">
                   <li class="form-check form-check-inline mb-2">
                     <input class="form-check-input" type="radio" name="identity" id="Fixed office job"
                       value="Fixed office job" checked>
@@ -240,13 +240,13 @@
                   </li>
                 </ul>
 
-                <div class="form-floating mb-4">
+                <div class="form-floating mb-6">
                   <input type="text" class="form-control " id="salary-target" placeholder="name@example.com">
                   <label class="text-dark" for="salary-target">目標薪資/收入</label>
                 </div>
 
-                <h3 class="mb-2">目前面臨的職涯挑戰</h3>
-                <ul class="mb-4">
+                <h3 class="mb-2 fs-7">目前面臨的職涯挑戰</h3>
+                <ul class="mb-6 ps-0">
                   <li class="mb-2 form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="unclear direction" value="problem1">
                     <label class="form-check-label" for="unclear direction">方向不明確</label>
@@ -278,8 +278,8 @@
                 </ul>
 
 
-                <h3 class="mb-2">感興趣的服務方案</h3>
-                <ul class="mb-5">
+                <h3 class="mb-2 fs-7">感興趣的服務方案</h3>
+                <ul class="mb-9 ps-0">
                   <li class="mb-2 form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="Explore positioning" value="project1">
                     <label class="form-check-label" for="Explore positioning">探索定位</label>
@@ -300,17 +300,17 @@
 
             </section>
 
-            <section class="career-identity d-flex mb-5">
-              <div class="aside me-4">
-                <h2 class="fs-4 lh-sm mb-2">專業技能區塊</h2>
+            <section class="career-identity d-flex mb-9">
+              <div class="aside me-6">
+                <h2 class="fs-4 lh-12 mb-3">專業技能區塊</h2>
                 <div class="d-flex align-items-center">
-                  <span class="text-secondary me-1">欄位皆為選填</span>
+                  <span class="text-secondary-emphasis me-1">欄位皆為選填</span>
                 </div>
               </div>
               <div class="career-form w-100">
 
-                <h3 class="mb-2">核心專業領域</h3>
-                <ul class="mb-4">
+                <h3 class="mb-2 fs-7">核心專業領域</h3>
+                <ul class="mb-6 ps-0">
                   <li class="mb-2 form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="design" value="skill1">
                     <label class="form-check-label" for="design">設計/創意</label>
@@ -353,7 +353,7 @@
                   </li>
                 </ul>
 
-                <div class="form-floating mb-4">
+                <div class="form-floating mb-6">
                   <textarea class="form-control career-summary" placeholder="Leave a comment here"
                     id="career-background"></textarea>
                   <label for="career-background" class="text-dark">
@@ -361,7 +361,7 @@
                   </label>
                 </div>
 
-                <div class="form-floating mb-4">
+                <div class="form-floating mb-6">
                   <textarea class="form-control career-summary" placeholder="Leave a comment here"
                     id="Professional skills"></textarea>
                   <label for="Professional skills" class="text-dark">
@@ -369,7 +369,7 @@
                   </label>
                 </div>
 
-                <div class="form-floating mb-4">
+                <div class="form-floating mb-6">
                   <textarea class="form-control career-summary" placeholder="Leave a comment here"
                     id="Language Proficiency"></textarea>
                   <label for="Language Proficiency" class="text-dark">
@@ -377,7 +377,7 @@
                   </label>
                 </div>
 
-                <div class="form-floating mb-5">
+                <div class="form-floating mb-9">
                   <textarea class="form-control career-summary" placeholder="Leave a comment here"
                     id="qualifications"></textarea>
                   <label for="qualifications" class="text-dark">
@@ -391,15 +391,15 @@
 
             </section>
 
-            <section class="career-identity d-flex mb-5 border-0">
-              <div class="aside me-4">
-                <h2 class="fs-4 lh-sm mb-2">教育背景</h2>
+            <section class="career-identity d-flex mb-9 border-0">
+              <div class="aside me-6">
+                <h2 class="fs-4 lh-sm mb-3">教育背景</h2>
                 <div class="d-flex align-items-center">
-                  <span class="text-secondary me-1">欄位皆為選填</span>
+                  <span class="text-secondary-emphasis me-1">欄位皆為選填</span>
                 </div>
               </div>
               <div class="career-form w-100">
-                <div class="form-floating mb-4">
+                <div class="form-floating mb-6">
                   <textarea class="form-control career-summary" placeholder="Leave a comment here"
                     id="Educational background"></textarea>
                   <label for="Educational background" class="text-dark">
@@ -435,7 +435,7 @@
 
 
 
-      <%- include("./layout/footer") %>
+      <%- include("./layout/footer-dashboard") %>
 
 
 
