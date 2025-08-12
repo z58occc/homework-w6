@@ -1,0 +1,23 @@
+.booking-tab{
+  .booking-item{
+    background: #E0E5EB ;
+  }
+}
+.dashboard{
+  gap: 24px;
+  .dashboard-card{
+    width: 33%;
+  }
+}
+.class-table{
+  .class{
+    width: 62.85714%;
+  }
+  .date{
+    width: 11.32653%;
+    padding-left: 0px;
+  }
+  td,.class{
+    padding: 16px 12px;
+  }
+}

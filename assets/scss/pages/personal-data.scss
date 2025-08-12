@@ -1,0 +1,24 @@
+
+.main {
+  padding: 80px 0;
+  width: 100%;
+  .content {
+    width: 56%;
+    margin: 0 auto;
+    .title {
+      width: 27%;
+    }
+    .main-form {
+      width: calc(73% - 24px);
+      .big-avatar {
+        width: 120px;
+      }
+    }
+  }
+}
+.personal-data{
+  .personal-item{
+    background: #E0E5EB;
+  }
+}
+

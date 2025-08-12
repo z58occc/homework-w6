@@ -1,0 +1,22 @@
+.career-plan{
+  .career-item{
+    background: #E0E5EB;
+  }
+}
+.career {
+  &-identity {
+    border-bottom: 1px solid #d1d9e1;
+    .aside {
+      width: 30.61224%;
+    }
+    .dropdown-menu {
+      width: 100%;
+      .dropdown-item {
+        padding: 8px 24px;
+      }
+    }
+    .career-summary {
+      height: 160px;
+    }
+  }
+}

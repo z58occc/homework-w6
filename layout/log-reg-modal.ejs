@@ -1,0 +1,127 @@
+<div class="modal fade  " id="log-modal" tabindex="-1" aria-labelledby="logModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl mt-0 mx-auto">
+    <div class="modal-content">
+      <div class="log-in-modal " id="log-part">
+        <img class="log-img rounded-start-4" src="/assets/images/nav/log-in.png" alt="smart-woman">
+        <div class="pt-9 text-center flex-fill position-relative">
+          <button type="button" class="x-btn btn  position-absolute">
+            <i class="bi bi-x-lg " data-bs-dismiss="modal" aria-label="Close"></i>
+          </button>
+          <h1 class="fw-bold fs-2 mb-9 lh-12">登入</h1>
+          <div class="px-9 ">
+            <div class="border-bottom border-primary-subtle pb-6 mb-6">
+              <button type="button"
+                class="btn border-primary-subtle rounded-4  py-3 w-100 d-flex justify-content-center mb-4 align-items-center"><img
+                  class="d-inline me-1  " src="/assets/images/nav/google-icon.png" alt="google-icon"> Google</button>
+              <button type="button"
+                class="btn border-primary-subtle rounded-4  py-3 w-100 d-flex justify-content-center align-items-center"><img
+                  class="d-inline me-1 " src="/assets/images/nav/discord-icon.png" alt="discord-icon"> Discord</button>
+            </div>
+
+            <div class="form-floating mb-4">
+              <input type="text" class="form-control w-100 mb-6 rounded-3" id="account-log"
+                placeholder="name@example.com">
+              <label class="text-dark ps-3 " for="account-log">帳號</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control w-100 mb-6     rounded-3" id="password-log"
+                placeholder="name@example.com">
+              <label class="text-dark ps-3 w-100  d-flex justify-content-between mb-4 " for="password">
+                <span>
+                  密碼
+                </span>
+                <img src="/assets/images/nav/visibility.png" alt="no-see">
+              </label>
+            </div>
+            <p class="text-secondary-emphasis fs-8 text-end mb-4">忘記密碼</p>
+
+            <button type="button" class="btn btn-dark py-3 fs-7 w-100 rounded-pill mb-9">
+              送出
+              <i class="bi bi-chevron-right"></i>
+            </button>
+            <p><span class="text-secondary-emphasis fw-500">不是會員？</span>
+              <a href="#" class="text-primary text-decoration-underline" id="reg-toggle"
+                onclick="showModal('reg')">快速註冊</a>
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+      <div class="reg-modal  flex-reverse flex-row-reverse rouned-4" id="reg-part">
+        <img class="reg rounded-end-4" src="/assets/images/nav/reg.png" alt="smart-man">
+        <div class="pt-9 text-center flex-fill position-relative pb-9 ">
+          <button type="button" class="x-btn btn  position-absolute">
+            <i class="bi bi-x-lg " data-bs-dismiss="modal" aria-label="Close"></i>
+          </button>
+          <h1 class="fw-bold fs-2 mb-9 lh-12">註冊</h1>
+          <div class="px-9 ">
+            <div class="border-bottom border-primary-subtle pb-6 mb-6">
+              <button type="button"
+                class="btn border-primary-subtle rounded-4  py-3 w-100 d-flex justify-content-center mb-4 align-items-center"><img
+                  class="d-inline google-icon me-1" src="/assets/images/nav/google-icon.png" alt="google-icon">
+                Google</button>
+              <button type="button"
+                class="btn border-primary-subtle rounded-4  py-3 w-100 d-flex justify-content-center align-items-center"><img
+                  class="d-inline me-1 discord-icon " src="/assets/images/nav/discord-icon.png" alt="discord-icon">
+                Discord</button>
+            </div>
+
+            <div class="form-floating mb-4">
+              <input type="text" class="form-control w-100 rounded-3" id="account-reg" placeholder="name@example.com">
+              <label class="text-dark ps-3 " for="account-reg">帳號</label>
+            </div>
+            <div class="form-floating mb-4 ">
+              <input type="password" class="form-control w-100      rounded-3" id="password-reg"
+                placeholder="name@example.com">
+              <label class="text-dark ps-3 w-100  d-flex justify-content-between " for="password-reg">
+                <span>
+                  密碼
+                </span>
+                <img src="/assets/images/nav/visibility.png" alt="no-see">
+              </label>
+            </div>
+            <div class="form-floating mb-4  ">
+              <input type="password" class="form-control  w-100     rounded-3" id="password-idk"
+                placeholder="name@example.com">
+              <label class="text-dark ps-3 w-100  d-flex justify-content-between  " for="password-idk">
+                <span>
+                  密碼
+                </span>
+                <img src="/assets/images/nav/visibility.png" alt="no-see">
+              </label>
+            </div>
+            <div class="form-floating mb-4">
+              <input type="password" class="form-control w-100    rounded-3" id="password-confirm"
+                placeholder="name@example.com">
+              <label class="text-dark ps-3 w-100  d-flex justify-content-between  " for="password-confirm">
+                <span>
+                  確認密碼
+                </span>
+                <img src="/assets/images/nav/visibility.png" alt="no-see">
+              </label>
+            </div>
+
+            <div class="text-start mb-4">
+              <input class="form-check-input" type="checkbox" id="unclear direction" value="problem1">
+              <label class="form-check-label " for="unclear direction">我同意<a
+                  class="text-primary  text-decoration-underline" href="#">服務條款</a>和<a
+                  class="text-primary  text-decoration-underline" href="#">隱私政策</a></label>
+            </div>
+
+            <button type="button" class="btn btn-dark py-3 fs-7 w-100 rounded-pill mb-9">
+              送出
+              <i class="bi bi-chevron-right"></i>
+            </button>
+            <p class="mb-0"><span class="text-secondary-emphasis fw-500 ">已經會員？</span>
+              <a href="#" class="text-primary text-decoration-underline" id="log-btn"
+                onclick="showModal('log')">直接登入</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

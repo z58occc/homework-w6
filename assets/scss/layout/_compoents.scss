@@ -29,7 +29,28 @@
     left: 0;
     height: 1px; /* 模擬 border-top 的高度 */
     width: 100%;
-    background: linear-gradient(to right, rgb(206, 216, 224,0), rgb(206, 216, 224), rgb(206, 216, 224,0));
+    background: linear-gradient(
+      to right,
+      rgb(206, 216, 224, 0),
+      rgb(206, 216, 224),
+      rgb(206, 216, 224, 0)
+    );
     pointer-events: none; /* 不影響滑鼠事件 */
+  }
+}
+.modal {
+  margin-top: 180px;
+  .log-img{
+    width: 58.33333%;
+  }
+  .x-btn{
+    right: 24px;
+    top: 24px;
+  }
+  .log-in-modal{
+    display: flex;
+  }
+  .reg-modal{
+    display: none;
   }
 }
