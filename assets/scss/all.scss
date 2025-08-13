@@ -1,8 +1,12 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
-@import "../../node_modules/bootstrap";
-@import './utils/utilities';
 @import './utils/helpers';
+@import "../../node_modules/bootstrap";
+
+
+
+@import "./utils/utilities";
+@import "bootstrap/scss/utilities/api";
 
 @import './layout/base';
 @import './layout/compoents';

@@ -121,7 +121,6 @@
 }
 .work-way {
   padding-top: 280px;
-  padding-bottom: 80px;
   margin-top: -120px;
   .img-why {
     width: 120px;
@@ -183,5 +182,31 @@
   }
   .bi-telephone,.bi-envelope{
     font-size: 18px;
+  }
+}
+@media (max-width:768px){
+  .header{
+    .hint{
+      width: 100%;
+    }
+    .bg-ball{
+      width: 100%;
+      top:32px;
+      width: 560px;
+    }    
+  }
+  .wraper{
+    margin-left: 0;
+    .logo{
+      width: 48px;
+    }
+  }
+  .work-way{
+    padding-top: 248px;
+    margin-top: -170px;
+    img{
+      width: 100%;
+    }
+
   }
 }
