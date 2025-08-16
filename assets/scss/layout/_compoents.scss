@@ -40,24 +40,57 @@
 }
 .modal {
   margin-top: 180px;
-  .log-img{
+  .log-img {
     width: 58.33333%;
   }
-  .x-btn{
+  .x-btn {
     right: 24px;
     top: 24px;
   }
-  .log-in-modal{
+  .log-in-modal {
     display: flex;
   }
-  .reg-modal{
+  .reg-modal {
     display: none;
   }
 }
-@media (max-width:768px){
-  .footer{
-    &-item{
+.copyright {
+  text-wrap: nowrap;
+}
+@media (max-width: 320px) {
+  .copyright {
+    text-wrap: wrap !important;
+    //320px會有x軸
+  }
+}
+@media (max-width: 768px) {
+  .nav{
+    .logo{
+      width: 92px;
+    }
+  }
+  .footer {
+    &-item {
       padding: 8px 16px;
+    }
+  }
+
+  .offcanvas-header {
+    .btn-close {
+      position: absolute;
+      top: 39px;
+      right: 39px;
+    }
+  }
+  .navbar-nav {
+    height: 652px;
+  }
+  .modal {
+    margin-top: 0;
+    border-radius: 0;
+    .modal-content {
+      border-radius: 0;
+      height: 100vh;
     }
   }
 }
