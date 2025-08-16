@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script type="module" crossorigin src="/web-layout-training-vite/assets/main-dbxJFSMO.js"></script>
+  <link rel="stylesheet" crossorigin href="/web-layout-training-vite/assets/main-R6IbGjDp.css">
+</head>
+
+  <body>
+    <nav class="navbar nav border-bottom border-primary-subtle">
+  <div class="d-flex justify-content-between container-md mx-0 mx-md-auto w align-items-center">
+    <a href="../pages/index.html">
+      <img class="logo" src="/web-layout-training-vite/assets/logo-DxUG1zrv.png" alt="man talk">
+    </a>
+    <ul class="d-md-flex  d-none align-items-center list-unstyled mb-0  ">
+      <li class="nav-item me-2">
+        <a href="../pages/service.html">
+          服務方案
+        </a>
+      </li>
+      <li class="nav-item me-2">
+        <a href="../pages/about.html">
+          關於職旅
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="../pages/contact-us.html">
+          聯絡我們
+        </a>
+      </li>
+    </ul>
+    <div class="d-flex">
+      <div class="d-flex align-items-center me-3">
+        <button type="button" class="btn border-primary-subtle rounded-4 px-5 py-2" data-bs-toggle="modal"
+          data-bs-target="#log-modal" onclick="showModal('log')" id="log-init-btn">登入/註冊</button>
+      </div>
+
+      <button class="navbar-toggler d-md-none border-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-6">
+          <ul class="navbar-nav  flex-grow-1 pe-3">
+            <li class="nav-item ">
+              <a class="nav-link  text-center fs-7 mx-auto" aria-current="page" href="#">服務方案</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center fs-7 mx-auto" href="#">關於職旅</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center fs-7 mx-auto" href="#">聯絡我們</a>
+            </li>
+          </ul>
+
+          <button class="btn btn-secondary w-100 fw-bold fs-5 lh-12">登入/註冊</button>
+        </div>
+      </div>
+
+
+    </div>
+</nav>
+
+
+<!--log Modal -->
+<div class="modal fade  " id="log-modal" tabindex="-1" aria-labelledby="logModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl mt-0 mx-auto">
+    <div class="modal-content ">
+      <div class="log-in-modal " id="log-part">
+        <img class="log-img rounded-start-4 d-none d-xl-block" src="/web-layout-training-vite/assets/log-in-Crce8Rsb.png" alt="smart-woman">
+        <div class="pt-9 text-center flex-fill position-relative ">
+          <button type="button" class="x-btn btn  position-absolute">
+            <i class="bi bi-x-lg " data-bs-dismiss="modal" aria-label="Close"></i>
+          </button>
+          <h1 class="fw-bold fs-3 fs-md-2 mb-6 mb-md-9 lh-12">登入</h1>
+          <div class="px-6 px-md-9 ">
+            <div class="border-bottom border-primary-subtle pb-6 mb-6">
+              <button type="button"
+                class="btn border-primary-subtle rounded-4  py-3 w-100 d-flex justify-content-center mb-4 align-items-center"><img
+                  class="d-inline me-1  " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJhSURBVHgBtVPPaxNBFH6z2aYabZschMbTKoIXkR6i5CA4IRG8dW17aBFs+h80FxEUjAh6rX9BklNSUczdmOzBQ9BAcxQ8uJf6+8eGJFiy2X3OLN3tZImbgPhBdma+9943817eIzAFPtGk4u7jWlOf5E/+ZviWSVJEa5MAqggkehSABjtXCQmVTtWa2lSiv1QaHXZ7BRaowmQUZ+bMXKzaNkRSGhG8nlTMbn9vSkGO7KAbpn5SFg+maTXYoogcS8WwAEqEEAMRoxKQZQB0fCyErXj9TdUv6qX/Y+XifaszmxeNNsHcYq214w/6kknkbZvo8frbIoyBJ3rw9MSHXuWcYnfCgYJTY1gLqWZtBvmvc0fBr+lLBfgHODVFkKhLRDL7ED5vlODVqGP6YV9FCZaDxObNQa6ajxmHoiTK+s8zHls80P0BKNlLrFrZINFeSC6xRZPgP8B5KZ8SkWxCVAH4rI94spZi31GOtRgI0+a58o/5UqYsiPco7PQvwO7vs1pr/XkKJiD9qNdABOqe500zxmvqpC/Lw/a+FTFuGVe5IKfo5d3VzSDBzOMuFQUJAY0L8r0jSlJgrP289uT9cMELshGKicrK9jjBZOEetW14IXLsgpJ3gWhIVFb32LIkcoTXkZAq2tAhEiywUeV2Gu5egdnvN4HYEe6m1++ePOPGjMy+jNYNi4QaKMy/s0fc5up41HUwmHsNw+PvIPLxtg7W6ZTvIb7UyqpiQSiPBAJrehiuyShvNTcqeqCoi0R5jbJWyzJxPkVi27A/g7RZCg9aG8+0sVfBFEiW1xV373/VOPwBlRDoojhuXUkAAAAASUVORK5CYII=" alt="google-icon"> Google</button>
+              <button type="button"
+                class="btn border-primary-subtle rounded-4  py-3 w-100 d-flex justify-content-center align-items-center"><img
+                  class="d-inline me-1 " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAOCAYAAADJ7fe0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBrVM9UsJQEP72iQx2sTCt4QTCCYgnUAtn1EboHCzMDfQGhhmhhkbp5AbqCQgnMDUWpHAGCZDnviTAC0Ohjl+R5O3Pl91v9xE0HDsjY2c2t6WMjiDx1m2Z7YXvoj68mRMskhjodgVaBY1KEabP/GmljiAi+Jxk8MFnUlvL8wVw8tgyvSXJ2dXIgpi+LAh+CP8rv13uubuBiI9iav+SQMEqhKETp6eGW/wJdBk/T+vD0hbQz7gInlRaaNURKJAkvTVtVBVlkZORnSUg96lplgvcrxI3Nfvj/Gex2zQP2dbQ43mStohoq5I1yoF6t1kwyRUlVSDoucWEUEZ+Jl6IAzq//uhzYkmz81ipwXXus91ZBhNctSNI9LNWbcLLcaCBLCzu/Z57z4AJHGwAhxkC/wDBwmSFAp+l7FCqR1IyBfHE2LcuLGd0ko2tD6tY9brcxPU/VvluTcLZu0QsgQ9Bte7D3ivpQTEZocKjrGEDFMk4nNwRhKdfwm+D053EdQ5owAAAAABJRU5ErkJggg==" alt="discord-icon"> Discord</button>
+            </div>
+
+            <div class="form-floating mb-4">
+              <input type="text" class="form-control w-100 mb-6 rounded-3" id="account-log"
+                placeholder="name@example.com">
+              <label class="text-dark ps-3 " for="account-log">帳號</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control w-100 mb-6     rounded-3" id="password-log"
+                placeholder="name@example.com">
+              <label class="text-dark ps-3 w-100  d-flex justify-content-between mb-4 " for="password">
+                <span>
+                  密碼
+                </span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJOSURBVHgB1ZO9bhNBEMdn7mxk2WCfhSOFBCVb0hE6SvsNQpcO09ERP0GSkip5A5IyFbiDKkkXqjglFetIDlawxFr5EPLHLf+589oXyxWEIiPd6XZu5jefS3QvRCkVzD1Zekd3ICl5XffDbctcLS0sBZ3zsy0X5LpPq0Th85AoEJ1HZPA+9dN02NZazwKyvAI4p/r2gCytENlNgc4tqhVLkS6Y6ch21097W9Ngdh+zoPPzSv3OTIzT/QiOQPSarC3DWYP86mdLN5yNlzBWUukozibK32gjvPAQ6CTVs98B+Yhjo9PSFWZ+Y5kCa+2BVHMLiETUyBgB+QXyboyhKCk1FB3X5L8AxB5Z7cb6iW4MHPbDDZShmLgm6Q/SXLkFBRVZ7fhhpBf7dfETvZQsHRv07HaUUNS7nv0Fw8NOq1lxqZcWl6Wf5fgU93Ssh0zZnkjvHz7gome0NgIT59JTVR5Py3JzMo4403iKXGOyp+5P3C4MEgx0x/iizOWLYvCWAc0/LtavjDHZQmBgWE1Ay9lHBeqcN/dvLrufHWzYs5JxkEI7ruAYAW8uTTubL3bxuWaHtCrQizPdiHRML6HPJKEAHskpkysI7BlZrl20dRTEd/EBPXbQcEjruXxBoeFfMMn3oc9163GdxZl4zUFR2VfAvnV+6J1xHTQlsswDnz7I4o4sDFphotFg7yY3ZzKopPjTCukDst3LFopHaH432ixmiYyy+RjPPgk4kSn9q8iqyaqUFpatm/6dQnH1qk7v0V+K7K/cKLRlL5emT/S/5A+b9CWEyQBLIgAAAABJRU5ErkJggg==" alt="no-see">
+              </label>
+            </div>
+            <p class="text-secondary-emphasis fs-8 text-end mb-4">忘記密碼</p>
+
+            <button type="button" class="btn btn-dark py-3 fs-7 w-100 rounded-pill mb-9">
+              送出
+              <i class="bi bi-chevron-right"></i>
+            </button>
+            <p><span class="text-secondary-emphasis fw-500">不是會員？</span>
+              <a href="#" class="text-primary text-decoration-underline" id="reg-toggle"
+                onclick="showModal('reg')">快速註冊</a>
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+      <div class="reg-modal  flex-reverse flex-row-reverse rouned-4" id="reg-part">
+        <img class="reg rounded-end-4 d-none d-xl-block" src="/web-layout-training-vite/assets/reg-BHO603Ia.png" alt="smart-man">
+        <div class="pt-9 text-center flex-fill position-relative pb-9 ">
+          <button type="button" class="x-btn btn  position-absolute">
+            <i class="bi bi-x-lg " data-bs-dismiss="modal" aria-label="Close"></i>
+          </button>
+          <h1 class="fw-bold fs-3 fs-md-2 mb-6 mb-md-9 lh-12">註冊</h1>
+          <div class="px-6 px-md-9 ">
+            <div class="border-bottom border-primary-subtle pb-6 mb-6">
+              <button type="button"
+                class="btn border-primary-subtle rounded-4  py-3 w-100 d-flex justify-content-center mb-4 align-items-center"><img
+                  class="d-inline google-icon me-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJhSURBVHgBtVPPaxNBFH6z2aYabZschMbTKoIXkR6i5CA4IRG8dW17aBFs+h80FxEUjAh6rX9BklNSUczdmOzBQ9BAcxQ8uJf6+8eGJFiy2X3OLN3tZImbgPhBdma+9943817eIzAFPtGk4u7jWlOf5E/+ZviWSVJEa5MAqggkehSABjtXCQmVTtWa2lSiv1QaHXZ7BRaowmQUZ+bMXKzaNkRSGhG8nlTMbn9vSkGO7KAbpn5SFg+maTXYoogcS8WwAEqEEAMRoxKQZQB0fCyErXj9TdUv6qX/Y+XifaszmxeNNsHcYq214w/6kknkbZvo8frbIoyBJ3rw9MSHXuWcYnfCgYJTY1gLqWZtBvmvc0fBr+lLBfgHODVFkKhLRDL7ED5vlODVqGP6YV9FCZaDxObNQa6ajxmHoiTK+s8zHls80P0BKNlLrFrZINFeSC6xRZPgP8B5KZ8SkWxCVAH4rI94spZi31GOtRgI0+a58o/5UqYsiPco7PQvwO7vs1pr/XkKJiD9qNdABOqe500zxmvqpC/Lw/a+FTFuGVe5IKfo5d3VzSDBzOMuFQUJAY0L8r0jSlJgrP289uT9cMELshGKicrK9jjBZOEetW14IXLsgpJ3gWhIVFb32LIkcoTXkZAq2tAhEiywUeV2Gu5egdnvN4HYEe6m1++ePOPGjMy+jNYNi4QaKMy/s0fc5up41HUwmHsNw+PvIPLxtg7W6ZTvIb7UyqpiQSiPBAJrehiuyShvNTcqeqCoi0R5jbJWyzJxPkVi27A/g7RZCg9aG8+0sVfBFEiW1xV373/VOPwBlRDoojhuXUkAAAAASUVORK5CYII=" alt="google-icon">
+                Google</button>
+              <button type="button"
+                class="btn border-primary-subtle rounded-4  py-3 w-100 d-flex justify-content-center align-items-center"><img
+                  class="d-inline me-1 discord-icon " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAOCAYAAADJ7fe0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgBrVM9UsJQEP72iQx2sTCt4QTCCYgnUAtn1EboHCzMDfQGhhmhhkbp5AbqCQgnMDUWpHAGCZDnviTAC0Ohjl+R5O3Pl91v9xE0HDsjY2c2t6WMjiDx1m2Z7YXvoj68mRMskhjodgVaBY1KEabP/GmljiAi+Jxk8MFnUlvL8wVw8tgyvSXJ2dXIgpi+LAh+CP8rv13uubuBiI9iav+SQMEqhKETp6eGW/wJdBk/T+vD0hbQz7gInlRaaNURKJAkvTVtVBVlkZORnSUg96lplgvcrxI3Nfvj/Gex2zQP2dbQ43mStohoq5I1yoF6t1kwyRUlVSDoucWEUEZ+Jl6IAzq//uhzYkmz81ipwXXus91ZBhNctSNI9LNWbcLLcaCBLCzu/Z57z4AJHGwAhxkC/wDBwmSFAp+l7FCqR1IyBfHE2LcuLGd0ko2tD6tY9brcxPU/VvluTcLZu0QsgQ9Bte7D3ivpQTEZocKjrGEDFMk4nNwRhKdfwm+D053EdQ5owAAAAABJRU5ErkJggg==" alt="discord-icon">
+                Discord</button>
+            </div>
+
+            <div class="form-floating mb-4">
+              <input type="text" class="form-control w-100 rounded-3" id="account-reg" placeholder="name@example.com">
+              <label class="text-dark ps-3 " for="account-reg">帳號</label>
+            </div>
+            <div class="form-floating mb-4 ">
+              <input type="password" class="form-control w-100      rounded-3" id="password-reg"
+                placeholder="name@example.com">
+              <label class="text-dark ps-3 w-100  d-flex justify-content-between " for="password-reg">
+                <span>
+                  密碼
+                </span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJOSURBVHgB1ZO9bhNBEMdn7mxk2WCfhSOFBCVb0hE6SvsNQpcO09ERP0GSkip5A5IyFbiDKkkXqjglFetIDlawxFr5EPLHLf+589oXyxWEIiPd6XZu5jefS3QvRCkVzD1Zekd3ICl5XffDbctcLS0sBZ3zsy0X5LpPq0Th85AoEJ1HZPA+9dN02NZazwKyvAI4p/r2gCytENlNgc4tqhVLkS6Y6ch21097W9Ngdh+zoPPzSv3OTIzT/QiOQPSarC3DWYP86mdLN5yNlzBWUukozibK32gjvPAQ6CTVs98B+Yhjo9PSFWZ+Y5kCa+2BVHMLiETUyBgB+QXyboyhKCk1FB3X5L8AxB5Z7cb6iW4MHPbDDZShmLgm6Q/SXLkFBRVZ7fhhpBf7dfETvZQsHRv07HaUUNS7nv0Fw8NOq1lxqZcWl6Wf5fgU93Ssh0zZnkjvHz7gome0NgIT59JTVR5Py3JzMo4403iKXGOyp+5P3C4MEgx0x/iizOWLYvCWAc0/LtavjDHZQmBgWE1Ay9lHBeqcN/dvLrufHWzYs5JxkEI7ruAYAW8uTTubL3bxuWaHtCrQizPdiHRML6HPJKEAHskpkysI7BlZrl20dRTEd/EBPXbQcEjruXxBoeFfMMn3oc9163GdxZl4zUFR2VfAvnV+6J1xHTQlsswDnz7I4o4sDFphotFg7yY3ZzKopPjTCukDst3LFopHaH432ixmiYyy+RjPPgk4kSn9q8iqyaqUFpatm/6dQnH1qk7v0V+K7K/cKLRlL5emT/S/5A+b9CWEyQBLIgAAAABJRU5ErkJggg==" alt="no-see">
+              </label>
+            </div>
+            <div class="form-floating mb-4  ">
+              <input type="password" class="form-control  w-100     rounded-3" id="password-idk"
+                placeholder="name@example.com">
+              <label class="text-dark ps-3 w-100  d-flex justify-content-between  " for="password-idk">
+                <span>
+                  密碼
+                </span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJOSURBVHgB1ZO9bhNBEMdn7mxk2WCfhSOFBCVb0hE6SvsNQpcO09ERP0GSkip5A5IyFbiDKkkXqjglFetIDlawxFr5EPLHLf+589oXyxWEIiPd6XZu5jefS3QvRCkVzD1Zekd3ICl5XffDbctcLS0sBZ3zsy0X5LpPq0Th85AoEJ1HZPA+9dN02NZazwKyvAI4p/r2gCytENlNgc4tqhVLkS6Y6ch21097W9Ngdh+zoPPzSv3OTIzT/QiOQPSarC3DWYP86mdLN5yNlzBWUukozibK32gjvPAQ6CTVs98B+Yhjo9PSFWZ+Y5kCa+2BVHMLiETUyBgB+QXyboyhKCk1FB3X5L8AxB5Z7cb6iW4MHPbDDZShmLgm6Q/SXLkFBRVZ7fhhpBf7dfETvZQsHRv07HaUUNS7nv0Fw8NOq1lxqZcWl6Wf5fgU93Ssh0zZnkjvHz7gome0NgIT59JTVR5Py3JzMo4403iKXGOyp+5P3C4MEgx0x/iizOWLYvCWAc0/LtavjDHZQmBgWE1Ay9lHBeqcN/dvLrufHWzYs5JxkEI7ruAYAW8uTTubL3bxuWaHtCrQizPdiHRML6HPJKEAHskpkysI7BlZrl20dRTEd/EBPXbQcEjruXxBoeFfMMn3oc9163GdxZl4zUFR2VfAvnV+6J1xHTQlsswDnz7I4o4sDFphotFg7yY3ZzKopPjTCukDst3LFopHaH432ixmiYyy+RjPPgk4kSn9q8iqyaqUFpatm/6dQnH1qk7v0V+K7K/cKLRlL5emT/S/5A+b9CWEyQBLIgAAAABJRU5ErkJggg==" alt="no-see">
+              </label>
+            </div>
+            <div class="form-floating mb-4">
+              <input type="password" class="form-control w-100    rounded-3" id="password-confirm"
+                placeholder="name@example.com">
+              <label class="text-dark ps-3 w-100  d-flex justify-content-between  " for="password-confirm">
+                <span>
+                  確認密碼
+                </span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJOSURBVHgB1ZO9bhNBEMdn7mxk2WCfhSOFBCVb0hE6SvsNQpcO09ERP0GSkip5A5IyFbiDKkkXqjglFetIDlawxFr5EPLHLf+589oXyxWEIiPd6XZu5jefS3QvRCkVzD1Zekd3ICl5XffDbctcLS0sBZ3zsy0X5LpPq0Th85AoEJ1HZPA+9dN02NZazwKyvAI4p/r2gCytENlNgc4tqhVLkS6Y6ch21097W9Ngdh+zoPPzSv3OTIzT/QiOQPSarC3DWYP86mdLN5yNlzBWUukozibK32gjvPAQ6CTVs98B+Yhjo9PSFWZ+Y5kCa+2BVHMLiETUyBgB+QXyboyhKCk1FB3X5L8AxB5Z7cb6iW4MHPbDDZShmLgm6Q/SXLkFBRVZ7fhhpBf7dfETvZQsHRv07HaUUNS7nv0Fw8NOq1lxqZcWl6Wf5fgU93Ssh0zZnkjvHz7gome0NgIT59JTVR5Py3JzMo4403iKXGOyp+5P3C4MEgx0x/iizOWLYvCWAc0/LtavjDHZQmBgWE1Ay9lHBeqcN/dvLrufHWzYs5JxkEI7ruAYAW8uTTubL3bxuWaHtCrQizPdiHRML6HPJKEAHskpkysI7BlZrl20dRTEd/EBPXbQcEjruXxBoeFfMMn3oc9163GdxZl4zUFR2VfAvnV+6J1xHTQlsswDnz7I4o4sDFphotFg7yY3ZzKopPjTCukDst3LFopHaH432ixmiYyy+RjPPgk4kSn9q8iqyaqUFpatm/6dQnH1qk7v0V+K7K/cKLRlL5emT/S/5A+b9CWEyQBLIgAAAABJRU5ErkJggg==" alt="no-see">
+              </label>
+            </div>
+
+            <div class="text-start mb-4">
+              <input class="form-check-input" type="checkbox" id="unclear direction" value="problem1">
+              <label class="form-check-label " for="unclear direction">我同意<a
+                  class="text-primary  text-decoration-underline" href="#">服務條款</a>和<a
+                  class="text-primary  text-decoration-underline" href="#">隱私政策</a></label>
+            </div>
+
+            <button type="button" class="btn btn-dark py-3 fs-7 w-100 rounded-pill mb-9">
+              送出
+              <i class="bi bi-chevron-right"></i>
+            </button>
+            <p class="mb-0"><span class="text-secondary-emphasis fw-500 ">已經會員？</span>
+              <a href="#" class="text-primary text-decoration-underline" id="log-btn"
+                onclick="showModal('log')">直接登入</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script>
+    const logModal = document.getElementById('log-part');
+    const regModal = document.getElementById('reg-part');
+
+    function showModal(type) {
+      const show = type === "log" ? logModal : regModal;
+      const hide = type === "log" ? regModal : logModal;
+
+      show.style.display = 'flex';
+      hide.style.display = 'none';
+    }
+  </script>
+      <main class="py-9 py-md-12 bg-secondary-subtle">
+        <div class="container-md">
+          <h1 class="text-center lh-12 fs-3 fs-md-2 fw-bold  mb-6 mb-md-9">用戶條款</h1>
+          <p class="fs-7 fs-md-6 mb-4 mb-md-6">最後更新日期：2025 年 1 月 1 日</p>
+          <p class="mb-4 mb-md-6 fs-8 fs-md-7">
+            歡迎使用職旅 WorkWay（以下簡稱「本平台」）。請詳細閱讀以下使用者條款，使用本平台即表示你同意本條款內容。
+          </p>
+          <h2 class="fs-6 fs-md-5 fw-500 lh-12 mb-2 mb-md-3">一、帳號註冊與義務</h2>
+
+          <ul class="mb-4 mb-md-6 fs-8 fs-md-7">
+            <li>你必須提供真實、完整的註冊資料，並對帳號行為負責。</li>
+            <li>不得冒用他人身份、或干擾他人使用本平台。</li>
+          </ul>
+
+
+
+          <h2 class="fs-6 fs-md-5 fw-500 lh-12 mb-2 mb-md-3">二、服務內容</h2>
+          <p class="mb-0 fs-8 fs-md-7">
+            本平台提供自由職涯相關服務，包括職涯諮詢、資源內容、顧問配對等功能。
+            <br>
+            我們保留變更、暫停、終止部分或全部服務的權利，恕不另行通知。
+          </p>
+
+          <h2 class="fs-6 fs-md-5 fw-500 lh-12 mb-2 mb-md-3">三、使用規範</h2>
+          <p class="mb-0 fs-8 fs-md-7">
+            你同意不從事以下行為：
+          </p>
+          <ul class="mb-4 mb-md-6 fs-8 fs-md-7">
+            <li>上傳任何不實、具侵權或誤導性的資訊</li>
+            <li>干擾平台正常運作或其他使用者體驗</li>
+            <li>濫用諮詢資源或未經授權對外公開諮詢內容</li>
+            <li>從事與本平台業務無關之商業推廣</li>
+          </ul>
+
+
+
+
+
+
+          <h2 class="fs-6 fs-md-5 fw-500 lh-12 mb-2 mb-md-3">四、智慧財產權</h2>
+          <p class="mb-4 mb-md-6 fs-8 fs-md-7">
+            本平台所呈現內容（包含但不限於文字、圖片、圖像設計、程式碼）均為職旅 WorkWay 或其授權方所擁有。未經同意禁止擅自轉載、複製或用於其他用途。
+          </p>
+
+          <h2 class="fs-6 fs-md-5 fw-500 lh-12 mb-2 mb-md-3">五、終止與限制使用</h2>
+          <p class="mb-4 mb-md-6 fs-8 fs-md-7">
+            如使用者違反本條款或法律規定，我們有權暫停或終止服務，無須事前通知。
+          </p>
+
+          <h2 class="fs-6 fs-md-5 fw-500 lh-12 mb-2 mb-md-3">六、責任限制</h2>
+          <p class="mb-4 mb-md-6 fs-8 fs-md-7">
+            本平台所提供資訊與建議僅供參考，並不構成法律、財務、醫療等專業意見。我們不對使用本服務後的職涯結果或第三方服務負完全責任。
+          </p>
+
+          <h2 class="fs-6 fs-md-5 fw-500 lh-12 mb-2 mb-md-3">七、準據法與爭議解決</h2>
+          <p class="mb-0 fs-8 fs-md-7">
+            本條款受中華民國法律管轄。如有爭議，雙方同意以台灣台北地方法院為第一審管轄法院。
+          </p>
+        </div>
+
+
+
+
+
+
+
+      </main>
+      <footer class="footer bg-secondary-subtle ">
+  <div class="container d-flex flex-column flex-md-row py-5 justify-content-between align-items-center ">
+    <ul class="d-flex list-unstyled flex-wrap justify-content-center">
+      <li class="footer-item">
+        <a href="../pages/service.html">
+          服務方案
+        </a>
+      </li>
+      <li class="footer-item">
+        <a href="../pages/about.html">
+          關於職旅
+        </a>
+      </li>
+      <li class="footer-item">
+        <a href="../pages/contact-us.html">
+          聯絡我們
+        </a>
+      </li>
+      <li class="footer-item">
+        <a href="../pages/privacy.html">
+          隱私權政策
+        </a>
+      </li>
+      <li class="footer-item">
+        <a href="../pages/terms.html">
+          用戶條款
+        </a>
+      </li>
+    </ul>
+
+    <span class="copyright text-secondary-emphasis fs-8 ">
+      Copyright © 2025 職旅 workway. All rights reserved.
+    </span>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</footer>
+
+
+
+
+
+  </body>
+
+</html>
