@@ -1,9 +1,9 @@
 .header {
   .hint {
-    width: 580px;
+    width: 30.20833%;
   }
   .bg-ball {
-    width: 800px;
+    width: 41.66666%;
     margin: 0 auto;
     height: 800px;
     border-radius: 1000px;
@@ -180,12 +180,12 @@
     width: 120px;
   }
   &-man {
-    width: 400px;
+    width: 30.86419%;
     margin-top: 130px;
     margin-right: 150px;
   }
   &-content {
-    width: 746px;
+    width: 57.56172%;
     .accordion-deco {
       border: 0.5px #d1d9e1 dashed;
       width: 100%;
@@ -232,7 +232,7 @@
   }
 }
 .title {
-  text-wrap: nowrap;
+  // text-wrap: nowrap;
 }
 @media (max-width: 320px) {
   .title {
